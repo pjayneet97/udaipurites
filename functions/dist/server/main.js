@@ -111,15 +111,17 @@ exports.styles = styles;
 Object.defineProperty(exports, "__esModule", { value: true });
 var i0 = __webpack_require__(/*! ./app.component.css.shim.ngstyle */ "./src/app/app.component.css.shim.ngstyle.js");
 var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
-var i2 = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+var i2 = __webpack_require__(/*! ./posts/posts.component.ngfactory */ "./src/app/posts/posts.component.ngfactory.js");
+var i3 = __webpack_require__(/*! ./posts/posts.component */ "./src/app/posts/posts.component.ts");
+var i4 = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 var styles_AppComponent = [i0.styles];
 var RenderType_AppComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_AppComponent, data: {} });
 exports.RenderType_AppComponent = RenderType_AppComponent;
-function View_AppComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 3, "div", [["style", "text-align:center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 1, "h1", [], null, null, null, null, null)), (_l()(), i1.ɵted(2, null, [" Welcome to ", "! "])), (_l()(), i1.ɵeld(3, 0, null, null, 0, "img", [["alt", "Angular Logo"], ["src", "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="], ["width", "300"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Here are some links to help you start: "])), (_l()(), i1.ɵeld(6, 0, null, null, 12, "ul", [], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 3, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 2, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "a", [["href", "https://angular.io/tutorial"], ["rel", "noopener"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Tour of Heroes"])), (_l()(), i1.ɵeld(11, 0, null, null, 3, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(12, 0, null, null, 2, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵeld(13, 0, null, null, 1, "a", [["href", "https://github.com/angular/angular-cli/wiki"], ["rel", "noopener"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["CLI Documentation"])), (_l()(), i1.ɵeld(15, 0, null, null, 3, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(16, 0, null, null, 2, "h2", [], null, null, null, null, null)), (_l()(), i1.ɵeld(17, 0, null, null, 1, "a", [["href", "https://blog.angular.io/"], ["rel", "noopener"], ["target", "_blank"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Angular blog"]))], null, function (_ck, _v) { var _co = _v.component; var currVal_0 = _co.title; _ck(_v, 2, 0, currVal_0); }); }
+function View_AppComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-posts", [], null, null, null, i2.View_PostsComponent_0, i2.RenderType_PostsComponent)), i1.ɵdid(1, 114688, null, 0, i3.PostsComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
 exports.View_AppComponent_0 = View_AppComponent_0;
-function View_AppComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-root", [], null, null, null, View_AppComponent_0, RenderType_AppComponent)), i1.ɵdid(1, 49152, null, 0, i2.AppComponent, [], null, null)], null, null); }
+function View_AppComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-root", [], null, null, null, View_AppComponent_0, RenderType_AppComponent)), i1.ɵdid(1, 49152, null, 0, i4.AppComponent, [], null, null)], null, null); }
 exports.View_AppComponent_Host_0 = View_AppComponent_Host_0;
-var AppComponentNgFactory = i1.ɵccf("app-root", i2.AppComponent, View_AppComponent_Host_0, {}, {}, []);
+var AppComponentNgFactory = i1.ɵccf("app-root", i4.AppComponent, View_AppComponent_Host_0, {}, {}, []);
 exports.AppComponentNgFactory = AppComponentNgFactory;
 
 
@@ -138,6 +140,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.title = 'app';
+        this.alert = { type: "primary", message: "hello world" };
     }
     return AppComponent;
 }());
@@ -219,6 +222,83 @@ var AppServerModule = /** @class */ (function () {
     return AppServerModule;
 }());
 exports.AppServerModule = AppServerModule;
+
+
+/***/ }),
+
+/***/ "./src/app/posts/posts.component.css.shim.ngstyle.js":
+/*!***********************************************************!*\
+  !*** ./src/app/posts/posts.component.css.shim.ngstyle.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var styles = [""];
+exports.styles = styles;
+
+
+/***/ }),
+
+/***/ "./src/app/posts/posts.component.ngfactory.js":
+/*!****************************************************!*\
+  !*** ./src/app/posts/posts.component.ngfactory.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+/**
+ * @fileoverview This file was generated by the Angular template compiler. Do not edit.
+ *
+ * @suppress {suspiciousCode,uselessCode,missingProperties,missingOverride,checkTypes}
+ * tslint:disable
+ */ 
+Object.defineProperty(exports, "__esModule", { value: true });
+var i0 = __webpack_require__(/*! ./posts.component.css.shim.ngstyle */ "./src/app/posts/posts.component.css.shim.ngstyle.js");
+var i1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var i2 = __webpack_require__(/*! ./posts.component */ "./src/app/posts/posts.component.ts");
+var styles_PostsComponent = [i0.styles];
+var RenderType_PostsComponent = i1.ɵcrt({ encapsulation: 0, styles: styles_PostsComponent, data: {} });
+exports.RenderType_PostsComponent = RenderType_PostsComponent;
+function View_PostsComponent_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 97, "div", [["class", "container"]], null, null, null, null, null)), (_l()(), i1.ɵeld(1, 0, null, null, 5, "header", [["class", "blog-header py-3"]], null, null, null, null, null)), (_l()(), i1.ɵeld(2, 0, null, null, 4, "div", [["class", "row flex-nowrap justify-content-between align-items-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(3, 0, null, null, 2, "div", [["class", "col-4 text-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(4, 0, null, null, 1, "a", [["class", "blog-header-logo text-dark"], ["href", "#"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["UDAIPURITES"])), (_l()(), i1.ɵeld(6, 0, null, null, 0, "div", [["class", "col-4 d-flex justify-content-end align-items-center"]], null, null, null, null, null)), (_l()(), i1.ɵeld(7, 0, null, null, 9, "div", [["class", "nav-scroller py-1 mb-2"]], null, null, null, null, null)), (_l()(), i1.ɵeld(8, 0, null, null, 8, "nav", [["class", "nav d-flex justify-content-between"]], null, null, null, null, null)), (_l()(), i1.ɵeld(9, 0, null, null, 1, "a", [["class", "p-2 text-muted"], ["href", "#"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Travel"])), (_l()(), i1.ɵeld(11, 0, null, null, 1, "a", [["class", "p-2 text-muted"], ["href", "#"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Food"])), (_l()(), i1.ɵeld(13, 0, null, null, 1, "a", [["class", "p-2 text-muted"], ["href", "#"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Technology"])), (_l()(), i1.ɵeld(15, 0, null, null, 1, "a", [["class", "p-2 text-muted"], ["href", "#"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Event"])), (_l()(), i1.ɵeld(17, 0, null, null, 5, "div", [["class", "jumbotron p-3 p-md-5 text-white rounded bg-dark"]], null, null, null, null, null)), (_l()(), i1.ɵeld(18, 0, null, null, 4, "div", [["class", "col-md-6 px-0"]], null, null, null, null, null)), (_l()(), i1.ɵeld(19, 0, null, null, 1, "h1", [["class", "display-4 font-italic"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Explore Udaipur in a Better way "])), (_l()(), i1.ɵeld(21, 0, null, null, 1, "p", [["class", "lead my-3"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Open platform for udaipurites to unfold Udaipur in their own way!!!"])), (_l()(), i1.ɵeld(23, 0, null, null, 74, "div", [["class", "container"]], null, null, null, null, null)), (_l()(), i1.ɵeld(24, 0, null, null, 73, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(25, 0, null, null, 50, "div", [["class", "col-md-8"]], null, null, null, null, null)), (_l()(), i1.ɵeld(26, 0, null, null, 3, "h1", [["class", "my-4"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Page Heading "])), (_l()(), i1.ɵeld(28, 0, null, null, 1, "small", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Secondary Text"])), (_l()(), i1.ɵeld(30, 0, null, null, 12, "div", [["class", "card mb-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(31, 0, null, null, 0, "img", [["alt", "Card image cap"], ["class", "card-img-top"], ["src", "http://placehold.it/750x300"]], null, null, null, null, null)), (_l()(), i1.ɵeld(32, 0, null, null, 6, "div", [["class", "card-body"]], null, null, null, null, null)), (_l()(), i1.ɵeld(33, 0, null, null, 1, "h2", [["class", "card-title"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Post Title"])), (_l()(), i1.ɵeld(35, 0, null, null, 1, "p", [["class", "card-text"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!"])), (_l()(), i1.ɵeld(37, 0, null, null, 1, "a", [["class", "btn btn-primary"], ["href", "#"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Read More \u2192"])), (_l()(), i1.ɵeld(39, 0, null, null, 3, "div", [["class", "card-footer text-muted"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Posted on January 1, 2017 by "])), (_l()(), i1.ɵeld(41, 0, null, null, 1, "a", [["href", "#"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Start Bootstrap"])), (_l()(), i1.ɵeld(43, 0, null, null, 12, "div", [["class", "card mb-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(44, 0, null, null, 0, "img", [["alt", "Card image cap"], ["class", "card-img-top"], ["src", "http://placehold.it/750x300"]], null, null, null, null, null)), (_l()(), i1.ɵeld(45, 0, null, null, 6, "div", [["class", "card-body"]], null, null, null, null, null)), (_l()(), i1.ɵeld(46, 0, null, null, 1, "h2", [["class", "card-title"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Post Title"])), (_l()(), i1.ɵeld(48, 0, null, null, 1, "p", [["class", "card-text"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!"])), (_l()(), i1.ɵeld(50, 0, null, null, 1, "a", [["class", "btn btn-primary"], ["href", "#"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Read More \u2192"])), (_l()(), i1.ɵeld(52, 0, null, null, 3, "div", [["class", "card-footer text-muted"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Posted on January 1, 2017 by "])), (_l()(), i1.ɵeld(54, 0, null, null, 1, "a", [["href", "#"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Start Bootstrap"])), (_l()(), i1.ɵeld(56, 0, null, null, 12, "div", [["class", "card mb-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(57, 0, null, null, 0, "img", [["alt", "Card image cap"], ["class", "card-img-top"], ["src", "http://placehold.it/750x300"]], null, null, null, null, null)), (_l()(), i1.ɵeld(58, 0, null, null, 6, "div", [["class", "card-body"]], null, null, null, null, null)), (_l()(), i1.ɵeld(59, 0, null, null, 1, "h2", [["class", "card-title"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Post Title"])), (_l()(), i1.ɵeld(61, 0, null, null, 1, "p", [["class", "card-text"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!"])), (_l()(), i1.ɵeld(63, 0, null, null, 1, "a", [["class", "btn btn-primary"], ["href", "#"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Read More \u2192"])), (_l()(), i1.ɵeld(65, 0, null, null, 3, "div", [["class", "card-footer text-muted"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, [" Posted on January 1, 2017 by "])), (_l()(), i1.ɵeld(67, 0, null, null, 1, "a", [["href", "#"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Start Bootstrap"])), (_l()(), i1.ɵeld(69, 0, null, null, 6, "ul", [["class", "pagination justify-content-center mb-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(70, 0, null, null, 2, "li", [["class", "page-item"]], null, null, null, null, null)), (_l()(), i1.ɵeld(71, 0, null, null, 1, "a", [["class", "page-link"], ["href", "#"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["\u2190 Older"])), (_l()(), i1.ɵeld(73, 0, null, null, 2, "li", [["class", "page-item disabled"]], null, null, null, null, null)), (_l()(), i1.ɵeld(74, 0, null, null, 1, "a", [["class", "page-link"], ["href", "#"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Newer \u2192"])), (_l()(), i1.ɵeld(76, 0, null, null, 21, "div", [["class", "col-md-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(77, 0, null, null, 20, "div", [["class", "card my-4"]], null, null, null, null, null)), (_l()(), i1.ɵeld(78, 0, null, null, 1, "h5", [["class", "card-header"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Categories"])), (_l()(), i1.ɵeld(80, 0, null, null, 17, "div", [["class", "card-body"]], null, null, null, null, null)), (_l()(), i1.ɵeld(81, 0, null, null, 16, "div", [["class", "row"]], null, null, null, null, null)), (_l()(), i1.ɵeld(82, 0, null, null, 10, "div", [["class", "col-lg-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(83, 0, null, null, 9, "ul", [["class", "list-unstyled mb-0"]], null, null, null, null, null)), (_l()(), i1.ɵeld(84, 0, null, null, 2, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(85, 0, null, null, 1, "a", [["href", "#"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Travel"])), (_l()(), i1.ɵeld(87, 0, null, null, 2, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(88, 0, null, null, 1, "a", [["href", "#"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Food"])), (_l()(), i1.ɵeld(90, 0, null, null, 2, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(91, 0, null, null, 1, "a", [["href", "#"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Technology"])), (_l()(), i1.ɵeld(93, 0, null, null, 4, "div", [["class", "col-lg-6"]], null, null, null, null, null)), (_l()(), i1.ɵeld(94, 0, null, null, 3, "ul", [["class", "list-unstyled mb-0"]], null, null, null, null, null)), (_l()(), i1.ɵeld(95, 0, null, null, 2, "li", [], null, null, null, null, null)), (_l()(), i1.ɵeld(96, 0, null, null, 1, "a", [["href", "#"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Events"])), (_l()(), i1.ɵeld(98, 0, null, null, 11, "footer", [["class", "blog-footer"]], null, null, null, null, null)), (_l()(), i1.ɵeld(99, 0, null, null, 7, "p", [], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Blog template built for "])), (_l()(), i1.ɵeld(101, 0, null, null, 1, "a", [["href", "https://getbootstrap.com/"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Bootstrap"])), (_l()(), i1.ɵted(-1, null, [" by "])), (_l()(), i1.ɵeld(104, 0, null, null, 1, "a", [["href", "https://twitter.com/mdo"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["@mdo"])), (_l()(), i1.ɵted(-1, null, ["."])), (_l()(), i1.ɵeld(107, 0, null, null, 2, "p", [], null, null, null, null, null)), (_l()(), i1.ɵeld(108, 0, null, null, 1, "a", [["href", "#"]], null, null, null, null, null)), (_l()(), i1.ɵted(-1, null, ["Back to top"]))], null, null); }
+exports.View_PostsComponent_0 = View_PostsComponent_0;
+function View_PostsComponent_Host_0(_l) { return i1.ɵvid(0, [(_l()(), i1.ɵeld(0, 0, null, null, 1, "app-posts", [], null, null, null, View_PostsComponent_0, RenderType_PostsComponent)), i1.ɵdid(1, 114688, null, 0, i2.PostsComponent, [], null, null)], function (_ck, _v) { _ck(_v, 1, 0); }, null); }
+exports.View_PostsComponent_Host_0 = View_PostsComponent_Host_0;
+var PostsComponentNgFactory = i1.ɵccf("app-posts", i2.PostsComponent, View_PostsComponent_Host_0, {}, {}, []);
+exports.PostsComponentNgFactory = PostsComponentNgFactory;
+
+
+/***/ }),
+
+/***/ "./src/app/posts/posts.component.ts":
+/*!******************************************!*\
+  !*** ./src/app/posts/posts.component.ts ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = __webpack_require__(/*! @angular/core */ "@angular/core");
+var PostsComponent = /** @class */ (function () {
+    function PostsComponent() {
+    }
+    PostsComponent.prototype.ngOnInit = function () {
+    };
+    return PostsComponent;
+}());
+exports.PostsComponent = PostsComponent;
 
 
 /***/ }),
