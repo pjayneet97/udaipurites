@@ -1,0 +1,18 @@
+{
+  "universal": {
+    "skipInstall": false,
+    "directory": ".",
+    "project": "udaipurites"
+  },
+  "serverless": {
+    "provider": "firebase",
+    "firebaseProject": "[udaipuritesdotcom]",
+    "skipInstall": false,
+    "directory": ".",
+    "project": "udaipurites",
+    "serverless": {
+      "aws": {},
+      "gcloud": {}
+    }
+  }
+}
