@@ -10,7 +10,7 @@ export class Post {
     description:string
     cover:string
     content:string
-    constructor() { 
+/*     constructor() { 
         this.id=""
         this.author=""
         this.title=""
@@ -22,5 +22,5 @@ export class Post {
         this.meta=[{name:"",content:""}]
         this.cover=""
         this.tags=[]
-    }
+    } */
 }

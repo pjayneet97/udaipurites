@@ -1,26 +1,29 @@
 import { Injectable } from '@angular/core';
 import { Post } from '../modals/blogpost.modal';
-
+import { AngularFirestore , AngularFirestoreCollection } from '@angular/fire/firestore';
+import { map } from 'rxjs/operators';;
 @Injectable({
   providedIn: 'root'
 })
 export class BlogpostService {
   posts: Post[]=[]
-  constructor() {
-    let post = new Post()
-      post.author="jayneet"
-      post.category="travel"
-      post.subtitle="travel in udaipur"
-      post.tags=["udaipurites","udaipur","vaniceofeast"]
-      post.content="html code"
-      post.meta=[{name:"description",content:"hello world"}]
-      post.description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!"
-      post.title="jeelo ki nagari Udaipur"
-      post.id=post.title.replace(/ /g, '-')
-      post.cover="https://www.reisefieber.net/wp-content/uploads/2017/10/lake-pichola-udaipur-rajasthan-indien-900x300.jpg"
-      this.posts.push(post)
+  postcollection:AngularFirestoreCollection
+  constructor(private db:AngularFirestore) {
+    this.postcollection=this.db.collection('blogposts',ref=>ref.orderBy('timestamp','desc'))
+    this.getPosts().subscribe(data=>this.posts=data)
+    
    }
    getPost(id:string){
-     return this.posts.find(tmp=>tmp.id==id)     
+     return this.posts.find(tmp=>tmp.id==id)         
+   }
+
+   getPosts(){
+    return this.postcollection.snapshotChanges().pipe(map(changes=>{
+      return changes.map(a=>{
+        const data = a.payload.doc.data() as Post;
+        data.id=a.payload.doc.id;
+        return data;
+      });
+    }));
    }
 }
