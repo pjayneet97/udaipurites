@@ -1,6 +1,6 @@
-export class post {
+export class Post {
     author:string;
-    timestamp:string
+    timestamp:Date
     title:string
     subtitle:string
     category:string
@@ -9,4 +9,16 @@ export class post {
     description:string
     cover:string
     content:string
+    constructor() { 
+        this.author=""
+        this.title=""
+        this.description=""
+        this.subtitle=""
+        this.timestamp=null
+        this.content="",this.tags=[]
+        this.category=""
+        this.meta=[{type:"",content:""}]
+        this.cover=""
+        this.tags=[]
+    }
 }

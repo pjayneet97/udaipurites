@@ -6,17 +6,33 @@ import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
 import { PostComponent } from './posts/post/post.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { PostcardComponent } from './posts/postcard/postcard.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  { path: '', component: PostsComponent },
+  { path: 'post', component: PostComponent },
+  { path: '**', component: PostsComponent }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     PostsComponent,
     PostComponent,
-    NavbarComponent
+    NavbarComponent,
+    PostcardComponent,
+    FooterComponent,
+    CarouselComponent
   ],
   imports:[
     CommonModule,
-    NgtUniversalModule
+    NgtUniversalModule,
+    RouterModule,
+    RouterModule.forRoot(routes)
  
     
   ],
