@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Post } from '../modals/blogpost.modal';
-import { post } from 'selenium-webdriver/http';
+import { BlogpostService } from "../services/blogpost.service"
 
 @Component({
   selector: 'app-posts',
@@ -8,30 +8,12 @@ import { post } from 'selenium-webdriver/http';
   styleUrls: ['./posts.component.css']
 })
 export class PostsComponent implements OnInit {
-  posts:Post[]=[]
-  post=new Post()
-  constructor() { }
+  constructor(public postservice:BlogpostService) { }
 
-  ngOnInit() {
-    this.getPosts()
+  ngOnInit() {    
     
   }
 
-  getPosts(){
-      console.log('getting posts')
-      // assign this.posts with posts fetched from database
-      this.post.author="jayneet"
-      this.post.category="travel"
-      this.post.subtitle="travel in udaipur"
-      this.post.tags=["udaipurites","udaipur","vaniceofeast"]
-      this.post.content="html code"
-      this.post.meta=[{type:"description",content:"hello world"}]
-      this.post.description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!"
-      this.post.title="udaipur wasio i nagari"
-      this.post.cover="blank"
-      this.posts.push(this.post)
-      console.log(this.post)
-      
-  }
+
 
 }

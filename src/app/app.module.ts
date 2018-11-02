@@ -14,7 +14,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', component: PostsComponent },
-  { path: 'post', component: PostComponent },
+  { path: 'post/:id', component: PostComponent },
+
   { path: '**', component: PostsComponent }
 ];
 
