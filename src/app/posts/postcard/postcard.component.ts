@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Post } from 'src/app/modals/blogpost.modal';
+import { Post } from '../../modals/blogpost.modal';
 
 @Component({
   selector: 'app-postcard',
