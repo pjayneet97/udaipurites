@@ -2,24 +2,29 @@
 @import "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css";
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 /* stylelint-disable selector-list-comma-newline-after */
+/*  
+@media (min-width:576px) { 
+.navbar-brand {
+  float:none;
+   }
+  } */
 
-.bd-highlight {
 
-  background-color:white;
-  font-family: cursive;
+  .sub-box
+  {
+    line-height: 2;
+    margin: 10px 2px 2px 2px;
 
-}
+  }
 
-.sub-box{
-  border-right: 1px solid;
-  margin-top: 15px;
-    margin-bottom: 15px;
-}
+  .whole{
+    background-color: black;
+  }
 
-.sub-box1{
-  margin-top: 15px;
-    margin-bottom: 15px;
-}
+
+  .main{
+margin: 140px 10px 10px 10px;
+   }
 
 
 .blog-header {

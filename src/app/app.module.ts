@@ -13,6 +13,7 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import{TabsComponent } from './tabs/tabs.component';
 
 import { RouterModule, Routes } from '@angular/router';
 
@@ -31,7 +32,8 @@ const routes: Routes = [
     NavbarComponent,
     PostcardComponent,
     FooterComponent,
-    CarouselComponent
+    CarouselComponent,
+    TabsComponent
   ],
   imports:[
     CommonModule,
