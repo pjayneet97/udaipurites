@@ -13,7 +13,6 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import{TabsComponent } from './tabs/tabs.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
@@ -35,7 +34,6 @@ const routes: Routes = [
     PostcardComponent,
     FooterComponent,
     CarouselComponent,
-    TabsComponent,
     
   ],
   imports:[
@@ -46,9 +44,8 @@ const routes: Routes = [
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     NgbModule,
-    BrowserAnimationsModule
- 
-    
+    BrowserAnimationsModule,
+  
   ],
   providers: [],
 })

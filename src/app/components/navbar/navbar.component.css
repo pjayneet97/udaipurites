@@ -1,4 +1,8 @@
-.badge{
-    background-color: tomato;
- color: white;
-}
+.navbar {
+ height: 70px;
+  }
+
+@media (max-width: 768px){
+.navbar{
+justify-content: center;
+}}
