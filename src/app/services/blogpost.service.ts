@@ -9,12 +9,16 @@ export class BlogpostService {
   posts: Post[]=[]
   postcollection:AngularFirestoreCollection
   constructor(private db:AngularFirestore) {
+    let post:Post
     this.postcollection=this.db.collection('blogposts',ref=>ref.orderBy('timestamp','desc'))
+    post={author:"jayneet",timestamp:null,meta:[],tags:[],title:"",subtitle:"",description:"",content:"",cover:"",id:"",category:""}
+    console.log(post)
+    this.postcollection.add(post)
     this.getPosts().subscribe(data=>this.posts=data)
     
    }
    getPost(id:string){
-     return this.posts.find(tmp=>tmp.id==id)         
+     return this.posts.find(tmp=>tmp.id==id)       
    }
 
    getPosts(){
