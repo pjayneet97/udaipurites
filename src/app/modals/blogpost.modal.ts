@@ -10,17 +10,17 @@ export class Post {
     description:string
     cover:string
     content:string
-/*     constructor() { 
+    constructor() { 
         this.id=""
         this.author=""
         this.title=""
         this.description=""
         this.subtitle=""
-        this.timestamp=null
+        this.timestamp=new Date()
         this.content="",this.tags=[]
         this.category=""
         this.meta=[{name:"",content:""}]
         this.cover=""
         this.tags=[]
-    } */
+    }
 }

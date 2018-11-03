@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carousel.component.css']
 })
 export class CarouselComponent implements OnInit {
-  title="Explore Udaipur in a Better way"
-  subtitle="Open platform for udaipurites to unfold Udaipur in their own way!!!"
+  images = [1, 2, 3].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
   constructor() { }
 
   ngOnInit() {
