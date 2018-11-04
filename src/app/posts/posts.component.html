@@ -1,32 +1,16 @@
-<div class="container">
-
-
-  <div class="container">
-
-    <div class="row">
-
       <!-- Blog Entries Column -->
-      <div class="col-md-8">
-        <h2 class="my-4">Trending in Udaipur
-        </h2>
-        <app-postcard *ngFor="let item of postservice.posts" [post]="item"></app-postcard>
+      <div class="card main1" style="background-color: rgb(255, 255, 255);text-align: center ; height:60px">
+          <div class="card-body align-middle ">   
+        <h4 class="mx-auto" style="color: rgb(4, 41, 58)">Trending in Udaipur
+        </h4>
       </div>
-
-      <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
-
-        <!-- Search Widget -->
-
-        <!-- Categories Widget -->
-    
-      </div>
-
     </div>
-    <!-- /.row -->
-
-  </div>
-  <!-- /.container -->
+         <div class="container">      
+        <app-postcard *ngFor="let item of postservice.posts" [post]="item"></app-postcard>
 </div>
+      <!-- Sidebar Widgets Column -->
+
+
 
 
 
