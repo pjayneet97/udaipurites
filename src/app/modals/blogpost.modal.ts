@@ -1,4 +1,5 @@
 export class Post {
+    fid:string
     id:string
     author:string;
     timestamp:Date
@@ -11,16 +12,6 @@ export class Post {
     cover:string
     content:string
     constructor() { 
-        this.id=""
-        this.author=""
-        this.title=""
-        this.description=""
-        this.subtitle=""
-        this.timestamp=new Date()
-        this.content="",this.tags=[]
-        this.category=""
-        this.meta=[{name:"",content:""}]
-        this.cover=""
-        this.tags=[]
+        this.fid="",this.author="jayneet",this.timestamp=null,this.meta=[],this.tags=[],this.title="",this.subtitle="",this.description="",this.content="",this.cover="",this.id="",this.category=""
     }
 }
