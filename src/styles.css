@@ -3,9 +3,19 @@
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 /* stylelint-disable selector-list-comma-newline-after */
 .main{
-margin:70px 10px 10px 10px;
+margin:65px 8px 8px 8px;
+-webkit-box-shadow:0 4px 4px -4px rgb(0, 0, 0);
+    -moz-box-shadow: 0 4px 4px -4px rgb(0, 0, 0);
+    box-shadow: 0 4px 4px -4px rgb(0, 0, 0);
    }
    
+   .main1{
+    margin:0px 8px 8px 8px;
+    -webkit-box-shadow:0 4px 4px -4px rgb(0, 0, 0);
+    -moz-box-shadow: 0 4px 4px -4px rgb(0, 0, 0);
+    box-shadow: 0 4px 4px -4px rgb(0, 0, 0);
+       } 
+
 .navbar {
     -webkit-box-shadow:0 4px 4px -4px rgb(0, 0, 0);
     -moz-box-shadow: 0 4px 4px -4px rgb(0, 0, 0);
