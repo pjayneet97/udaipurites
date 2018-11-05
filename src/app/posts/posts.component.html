@@ -5,13 +5,10 @@
         </h4>
       </div>
     </div>
-         <div class="container">      
-        <app-postcard *ngFor="let item of postservice.posts" [post]="item"></app-postcard>
+    <div class="row">
+        <div class="col-md-6" *ngFor="let item of postservice.posts"> 
+         <!-- <div class="container">       -->
+        <app-postcard [post]="item"></app-postcard>
+
 </div>
-      <!-- Sidebar Widgets Column -->
-
-
-
-
-
-
+</div>

@@ -1,12 +1,19 @@
-<div class="card mb-4 main1">
-  <img class="card-img-top" src="{{post.cover}}" alt="Card image cap">
-  <div class="card-body">
-    <h2 class="card-title">{{post.title}}</h2>
-    <p class="card-text">{{post.description}}</p>
-    <a routerLink="/post/{{post.id}}" class="btn btn-primary">Read More &rarr;</a>
-  </div>
-  <div class="card-footer text-muted">
-    Posted on {{post.timestamp}} by
-    <a href="#">{{post.author}}</a>
-  </div>
+<div class="card main1">
+    <div class="row">
+        <div class="col-6 py-2">
+            <img class="img-thumbnail rounded float-left" src="assets/images/post.jpeg" alt="" style="height:200px;width:400px" >
+       </div>
+             <div class="col-6">
+                      <a routerLink="/post/{{post.id}}" class="badge badge-pill badge-info float-right" style="margin:13px 1px 0px 0px">{{post.category}}</a>
+                 <div class="py-2">
+                      <h5 class="card-title">{{post.title}}</h5>
+                       <p class="card-text customfont" >{{post.description}}</p>
+                       <a routerLink="/post/{{post.id}}" class="badge badge-primary">Read More &rarr;</a>
+                       <div class="text-muted">
+                           <p class="customfont"> Posted on {{post.timestamp.toDate()}}
+                          by <a href="#"> {{post.author}}</a> </p>     
+                       </div>  
+                  </div>
+              </div>
+   </div>
 </div>
